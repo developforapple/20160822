@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D401C0E1D5CAD71008581CC /* TCRepairViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D401C0D1D5CAD71008581CC /* TCRepairViewCtrl.m */; };
+		2D401C111D5CB5D2008581CC /* TCRepairImagesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D401C101D5CB5D2008581CC /* TCRepairImagesCell.m */; };
+		2D6A174F1D503A86008A090F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D6A174E1D503A86008A090F /* main.m */; };
+		2D6A17521D503A86008A090F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D6A17511D503A86008A090F /* AppDelegate.m */; };
+		2D6A175B1D503A86008A090F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D6A17591D503A86008A090F /* Main.storyboard */; };
+		2D6A175D1D503A86008A090F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6A175C1D503A86008A090F /* Assets.xcassets */; };
+		2D6A17601D503A86008A090F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D6A175E1D503A86008A090F /* LaunchScreen.storyboard */; };
+		2D78B3E11D5A29F6001CB3B7 /* TCServicesViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D78B3E01D5A29F6001CB3B7 /* TCServicesViewCtrl.m */; };
+		98F507238DE21B76EE1D01E7 /* libPods-TransactionCall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F14CAF2C58833C2ED0D8782 /* libPods-TransactionCall.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2D401C0C1D5CAD71008581CC /* TCRepairViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCRepairViewCtrl.h; sourceTree = "<group>"; };
+		2D401C0D1D5CAD71008581CC /* TCRepairViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCRepairViewCtrl.m; sourceTree = "<group>"; };
+		2D401C0F1D5CB5D2008581CC /* TCRepairImagesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCRepairImagesCell.h; sourceTree = "<group>"; };
+		2D401C101D5CB5D2008581CC /* TCRepairImagesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCRepairImagesCell.m; sourceTree = "<group>"; };
+		2D6A174A1D503A86008A090F /* TransactionCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransactionCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D6A174E1D503A86008A090F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2D6A17501D503A86008A090F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2D6A17511D503A86008A090F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2D6A175A1D503A86008A090F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D6A175C1D503A86008A090F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D6A175F1D503A86008A090F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D6A17611D503A86008A090F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D78B3DF1D5A29F6001CB3B7 /* TCServicesViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCServicesViewCtrl.h; sourceTree = "<group>"; };
+		2D78B3E01D5A29F6001CB3B7 /* TCServicesViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCServicesViewCtrl.m; sourceTree = "<group>"; };
+		2D78B3E21D5A2FE5001CB3B7 /* SPMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMacro.h; sourceTree = "<group>"; };
+		30A88E05117B16079B61F13E /* Pods-TransactionCall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransactionCall.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransactionCall/Pods-TransactionCall.release.xcconfig"; sourceTree = "<group>"; };
+		3F14CAF2C58833C2ED0D8782 /* libPods-TransactionCall.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TransactionCall.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A11D66BE2F3A3DB4AAB5220A /* Pods-TransactionCall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransactionCall.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransactionCall/Pods-TransactionCall.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D6A17471D503A85008A090F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98F507238DE21B76EE1D01E7 /* libPods-TransactionCall.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D6A17411D503A85008A090F = {
+			isa = PBXGroup;
+			children = (
+				2D6A174C1D503A86008A090F /* TransactionCall */,
+				2D6A174B1D503A86008A090F /* Products */,
+				B799AB7AE68C2FC0DB5D5105 /* Pods */,
+				8935C14F9EB7AE015EB4DDA6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2D6A174B1D503A86008A090F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D6A174A1D503A86008A090F /* TransactionCall.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D6A174C1D503A86008A090F /* TransactionCall */ = {
+			isa = PBXGroup;
+			children = (
+				2D78B3E21D5A2FE5001CB3B7 /* SPMacro.h */,
+				2D78B3DE1D5A29CE001CB3B7 /* Classes */,
+				2D6A17501D503A86008A090F /* AppDelegate.h */,
+				2D6A17511D503A86008A090F /* AppDelegate.m */,
+				2D6A17591D503A86008A090F /* Main.storyboard */,
+				2D6A175C1D503A86008A090F /* Assets.xcassets */,
+				2D6A175E1D503A86008A090F /* LaunchScreen.storyboard */,
+				2D6A17611D503A86008A090F /* Info.plist */,
+				2D6A174D1D503A86008A090F /* Supporting Files */,
+			);
+			path = TransactionCall;
+			sourceTree = "<group>";
+		};
+		2D6A174D1D503A86008A090F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D6A174E1D503A86008A090F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2D78B3DE1D5A29CE001CB3B7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2D78B3DF1D5A29F6001CB3B7 /* TCServicesViewCtrl.h */,
+				2D78B3E01D5A29F6001CB3B7 /* TCServicesViewCtrl.m */,
+				2D401C0C1D5CAD71008581CC /* TCRepairViewCtrl.h */,
+				2D401C0D1D5CAD71008581CC /* TCRepairViewCtrl.m */,
+				2D401C0F1D5CB5D2008581CC /* TCRepairImagesCell.h */,
+				2D401C101D5CB5D2008581CC /* TCRepairImagesCell.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8935C14F9EB7AE015EB4DDA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F14CAF2C58833C2ED0D8782 /* libPods-TransactionCall.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B799AB7AE68C2FC0DB5D5105 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A11D66BE2F3A3DB4AAB5220A /* Pods-TransactionCall.debug.xcconfig */,
+				30A88E05117B16079B61F13E /* Pods-TransactionCall.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D6A17491D503A85008A090F /* TransactionCall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D6A17641D503A86008A090F /* Build configuration list for PBXNativeTarget "TransactionCall" */;
+			buildPhases = (
+				560B8104ACADB71AD2E93BFA /* [CP] Check Pods Manifest.lock */,
+				2D6A17461D503A85008A090F /* Sources */,
+				2D6A17471D503A85008A090F /* Frameworks */,
+				2D6A17481D503A85008A090F /* Resources */,
+				F214753320FD6236EA84355A /* [CP] Embed Pods Frameworks */,
+				C99F369252C1D62394A93A6A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransactionCall;
+			productName = TransactionCall;
+			productReference = 2D6A174A1D503A86008A090F /* TransactionCall.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D6A17421D503A85008A090F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = wwwbbat;
+				TargetAttributes = {
+					2D6A17491D503A85008A090F = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = A8WR857UHJ;
+					};
+				};
+			};
+			buildConfigurationList = 2D6A17451D503A85008A090F /* Build configuration list for PBXProject "TransactionCall" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D6A17411D503A85008A090F;
+			productRefGroup = 2D6A174B1D503A86008A090F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D6A17491D503A85008A090F /* TransactionCall */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D6A17481D503A85008A090F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D6A17601D503A86008A090F /* LaunchScreen.storyboard in Resources */,
+				2D6A175D1D503A86008A090F /* Assets.xcassets in Resources */,
+				2D6A175B1D503A86008A090F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		560B8104ACADB71AD2E93BFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C99F369252C1D62394A93A6A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransactionCall/Pods-TransactionCall-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F214753320FD6236EA84355A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransactionCall/Pods-TransactionCall-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D6A17461D503A85008A090F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D6A17521D503A86008A090F /* AppDelegate.m in Sources */,
+				2D78B3E11D5A29F6001CB3B7 /* TCServicesViewCtrl.m in Sources */,
+				2D6A174F1D503A86008A090F /* main.m in Sources */,
+				2D401C111D5CB5D2008581CC /* TCRepairImagesCell.m in Sources */,
+				2D401C0E1D5CAD71008581CC /* TCRepairViewCtrl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2D6A17591D503A86008A090F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D6A175A1D503A86008A090F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2D6A175E1D503A86008A090F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D6A175F1D503A86008A090F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D6A17621D503A86008A090F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Debug;
+		};
+		2D6A17631D503A86008A090F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Release;
+		};
+		2D6A17651D503A86008A090F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A11D66BE2F3A3DB4AAB5220A /* Pods-TransactionCall.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TransactionCall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TransactionCall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Debug;
+		};
+		2D6A17661D503A86008A090F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30A88E05117B16079B61F13E /* Pods-TransactionCall.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TransactionCall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TransactionCall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D6A17451D503A85008A090F /* Build configuration list for PBXProject "TransactionCall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D6A17621D503A86008A090F /* Debug */,
+				2D6A17631D503A86008A090F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D6A17641D503A86008A090F /* Build configuration list for PBXNativeTarget "TransactionCall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D6A17651D503A86008A090F /* Debug */,
+				2D6A17661D503A86008A090F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D6A17421D503A85008A090F /* Project object */;
+}

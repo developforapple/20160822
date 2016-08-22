@@ -1,0 +1,35 @@
+PODS:
+  - DZNEmptyDataSet (1.8.1)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - YYCache (1.0.3)
+  - YYImage (1.0.2):
+    - YYImage/Core (= 1.0.2)
+  - YYImage/Core (1.0.2)
+  - YYModel (1.0.4)
+  - YYText (1.0.5)
+  - YYWebImage (1.0.4):
+    - YYCache
+    - YYImage
+
+DEPENDENCIES:
+  - DZNEmptyDataSet (~> 1.8.1)
+  - FMDB
+  - YYCache
+  - YYModel
+  - YYText
+  - YYWebImage
+
+SPEC CHECKSUMS:
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  YYCache: 282f35b5b0990833d0b7a06d864a87141a021da2
+  YYImage: 2cc79ed49b9549b71c6715cefe7b0f5ab3d33abf
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  YYText: ac09660c9ccd9b817f409a20caa6f5587444d2ae
+  YYWebImage: 0431ed108e104527669b86f75efd58958425cca2
+
+PODFILE CHECKSUM: 96b185af5b9bb66d7bd2966580b39216ee1d9046
+
+COCOAPODS: 1.0.1
