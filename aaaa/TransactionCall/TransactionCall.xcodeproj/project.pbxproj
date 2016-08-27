@@ -15,6 +15,8 @@
 		2D6A175D1D503A86008A090F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6A175C1D503A86008A090F /* Assets.xcassets */; };
 		2D6A17601D503A86008A090F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D6A175E1D503A86008A090F /* LaunchScreen.storyboard */; };
 		2D78B3E11D5A29F6001CB3B7 /* TCServicesViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D78B3E01D5A29F6001CB3B7 /* TCServicesViewCtrl.m */; };
+		44CB7ADE1D71894900818480 /* SZWY_LOGO@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CB7ADC1D71894900818480 /* SZWY_LOGO@2x.png */; };
+		44CB7ADF1D71894900818480 /* SZWY_LOGO@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CB7ADD1D71894900818480 /* SZWY_LOGO@3x.png */; };
 		98F507238DE21B76EE1D01E7 /* libPods-TransactionCall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F14CAF2C58833C2ED0D8782 /* libPods-TransactionCall.a */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,8 @@
 		2D78B3E21D5A2FE5001CB3B7 /* SPMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMacro.h; sourceTree = "<group>"; };
 		30A88E05117B16079B61F13E /* Pods-TransactionCall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransactionCall.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransactionCall/Pods-TransactionCall.release.xcconfig"; sourceTree = "<group>"; };
 		3F14CAF2C58833C2ED0D8782 /* libPods-TransactionCall.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TransactionCall.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44CB7ADC1D71894900818480 /* SZWY_LOGO@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SZWY_LOGO@2x.png"; sourceTree = "<group>"; };
+		44CB7ADD1D71894900818480 /* SZWY_LOGO@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SZWY_LOGO@3x.png"; sourceTree = "<group>"; };
 		A11D66BE2F3A3DB4AAB5220A /* Pods-TransactionCall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransactionCall.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransactionCall/Pods-TransactionCall.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +76,7 @@
 		2D6A174C1D503A86008A090F /* TransactionCall */ = {
 			isa = PBXGroup;
 			children = (
+				44CB7ADB1D71894900818480 /* Resources */,
 				2D78B3E21D5A2FE5001CB3B7 /* SPMacro.h */,
 				2D78B3DE1D5A29CE001CB3B7 /* Classes */,
 				2D6A17501D503A86008A090F /* AppDelegate.h */,
@@ -104,6 +109,15 @@
 				2D401C101D5CB5D2008581CC /* TCRepairImagesCell.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		44CB7ADB1D71894900818480 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				44CB7ADC1D71894900818480 /* SZWY_LOGO@2x.png */,
+				44CB7ADD1D71894900818480 /* SZWY_LOGO@3x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		8935C14F9EB7AE015EB4DDA6 /* Frameworks */ = {
@@ -157,7 +171,7 @@
 				TargetAttributes = {
 					2D6A17491D503A85008A090F = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = A8WR857UHJ;
+						DevelopmentTeam = 8QP3ZT6EXM;
 					};
 				};
 			};
@@ -186,6 +200,8 @@
 			files = (
 				2D6A17601D503A86008A090F /* LaunchScreen.storyboard in Resources */,
 				2D6A175D1D503A86008A090F /* Assets.xcassets in Resources */,
+				44CB7ADF1D71894900818480 /* SZWY_LOGO@3x.png in Resources */,
+				44CB7ADE1D71894900818480 /* SZWY_LOGO@2x.png in Resources */,
 				2D6A175B1D503A86008A090F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,7 +389,7 @@
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TransactionCall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.TransactionCall;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wwwbbat.TransactionCall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "arm64 armv7";
@@ -385,12 +401,12 @@
 			baseConfigurationReference = 30A88E05117B16079B61F13E /* Pods-TransactionCall.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TransactionCall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.TransactionCall;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wwwbbat.TransactionCall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "arm64 armv7";

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,14 +18,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="政务呼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WsA-u7-GcO">
-                                <rect key="frame" x="159" y="349" width="96" height="38.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                            <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SZWY_LOGO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkV-qi-FfP">
+                                <rect key="frame" x="107" y="335" width="200" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="brj-pn-dag"/>
+                                    <constraint firstAttribute="width" secondItem="ZkV-qi-FfP" secondAttribute="height" multiplier="573:185" id="oGO-QN-S7m"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京首政伟业科技有限公司" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxT-p5-g53">
+                                <rect key="frame" x="111" y="689.5" width="192" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright 2016 北京首政伟业" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06P-Qz-mGz">
-                                <rect key="frame" x="126" y="706.5" width="163" height="14.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capital Governmental Software &amp; Service Co., Ltd." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mf5-UD-pi9">
+                                <rect key="frame" x="65" y="713" width="284.5" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -32,10 +40,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WsA-u7-GcO" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="2bn-NB-roG"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="06P-Qz-mGz" secondAttribute="bottom" constant="15" id="J7m-eI-GIr"/>
-                            <constraint firstItem="06P-Qz-mGz" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Xko-rt-peJ"/>
-                            <constraint firstItem="WsA-u7-GcO" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="m9z-cV-wTs"/>
+                            <constraint firstItem="ZkV-qi-FfP" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="0ce-bV-peo"/>
+                            <constraint firstItem="ZkV-qi-FfP" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="JgN-kz-Fg8"/>
+                            <constraint firstItem="mf5-UD-pi9" firstAttribute="top" secondItem="wxT-p5-g53" secondAttribute="bottom" constant="4" id="Tir-gY-VnV"/>
+                            <constraint firstItem="wxT-p5-g53" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Xz4-W6-6hD"/>
+                            <constraint firstItem="mf5-UD-pi9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ks8-Ni-vQC"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="mf5-UD-pi9" secondAttribute="bottom" constant="8" id="lbi-hn-9Ud"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
@@ -45,4 +55,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SZWY_LOGO" width="200" height="64"/>
+    </resources>
 </document>

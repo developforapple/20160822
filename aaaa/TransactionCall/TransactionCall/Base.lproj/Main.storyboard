@@ -52,7 +52,7 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_fuwu" translatesAutoresizingMaskIntoConstraints="NO" id="wko-Dk-eEL">
+                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="金牌客服" translatesAutoresizingMaskIntoConstraints="NO" id="wko-Dk-eEL">
                                                     <rect key="frame" x="15" y="13" width="26" height="26"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="26" id="Qg3-9N-Oh3"/>
@@ -81,7 +81,7 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_caigou" translatesAutoresizingMaskIntoConstraints="NO" id="eNS-cN-ReH">
+                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="采购服务" translatesAutoresizingMaskIntoConstraints="NO" id="eNS-cN-ReH">
                                                     <rect key="frame" x="15" y="13" width="26" height="26"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="26" id="5kr-f8-Vbl"/>
@@ -110,7 +110,7 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_tousu" translatesAutoresizingMaskIntoConstraints="NO" id="Ceb-UN-qyB">
+                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="投诉" translatesAutoresizingMaskIntoConstraints="NO" id="Ceb-UN-qyB">
                                                     <rect key="frame" x="15" y="13" width="26" height="26"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="26" id="BX2-17-Grm"/>
@@ -139,7 +139,7 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_weixiu" translatesAutoresizingMaskIntoConstraints="NO" id="dp5-UA-6WU">
+                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="报修" translatesAutoresizingMaskIntoConstraints="NO" id="dp5-UA-6WU">
                                                     <rect key="frame" x="15" y="13" width="26" height="26"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="26" id="YAy-QE-2zA"/>
@@ -176,7 +176,7 @@
         <scene sceneID="Z2D-YT-JFn">
             <objects>
                 <navigationController id="rba-GP-cTl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="政务呼" id="feZ-sa-tnJ"/>
+                    <tabBarItem key="tabBarItem" title="政务呼" image="政务呼" id="feZ-sa-tnJ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bzl-xr-s6S">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -613,7 +613,7 @@
         <scene sceneID="JUE-Zb-JgN">
             <objects>
                 <navigationController id="C8j-mO-rIS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我的服务" badgeValue="4" id="B34-es-Xk6"/>
+                    <tabBarItem key="tabBarItem" title="我的服务" image="我的服务" badgeValue="4" id="B34-es-Xk6"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6s3-NN-Jei">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -787,16 +787,24 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fvu-w1-JaA">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fvu-w1-JaA">
                                             <rect key="frame" x="0.0" y="0.0" width="207" height="43.5"/>
-                                            <state key="normal" title="添加图片"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="添加图片" image="图片">
+                                                <color key="titleColor" red="0.025023749009999999" green="0.61176470589999998" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
                                             <connections>
                                                 <action selector="addPic:" destination="EoW-AR-tLB" eventType="touchUpInside" id="pld-Ob-Beh"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khu-dM-hw9">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khu-dM-hw9">
                                             <rect key="frame" x="207" y="0.0" width="207" height="43.5"/>
-                                            <state key="normal" title="添加语音"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="添加语音" image="语音">
+                                                <color key="titleColor" red="0.025023749009999999" green="0.61176470589999998" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -1206,7 +1214,7 @@
         <scene sceneID="c8s-wr-hMy">
             <objects>
                 <navigationController id="pbI-8d-guU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="会员" id="TiM-x8-jPV"/>
+                    <tabBarItem key="tabBarItem" title="会员" image="会员" id="TiM-x8-jPV"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="v88-AU-Jja">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1225,9 +1233,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon_caigou" width="64" height="64"/>
-        <image name="icon_fuwu" width="64" height="64"/>
-        <image name="icon_tousu" width="64" height="64"/>
-        <image name="icon_weixiu" width="64" height="64"/>
+        <image name="会员" width="20" height="20"/>
+        <image name="图片" width="20" height="20"/>
+        <image name="我的服务" width="20" height="20"/>
+        <image name="投诉" width="20" height="20"/>
+        <image name="报修" width="20" height="20"/>
+        <image name="政务呼" width="20" height="20"/>
+        <image name="语音" width="20" height="20"/>
+        <image name="采购服务" width="20" height="20"/>
+        <image name="金牌客服" width="20" height="20"/>
     </resources>
 </document>

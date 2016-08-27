@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9C0F419FF263611224E58A149146EDA2F3731520",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9C0F419FF263611224E58A149146EDA2F3731520" : 0,
+    "6C7A2CCB8BB66DAA56E17FFFD0BDD95D25F578D6" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CC279AB7-C7B9-45B4-B345-341E019D6582",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9C0F419FF263611224E58A149146EDA2F3731520" : "20160822\/",
+    "6C7A2CCB8BB66DAA56E17FFFD0BDD95D25F578D6" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TransactionCall",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "aaaa\/TransactionCall\/TransactionCall.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/alcatraz\/Alcatraz",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6C7A2CCB8BB66DAA56E17FFFD0BDD95D25F578D6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/developforapple\/20160822.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9C0F419FF263611224E58A149146EDA2F3731520"
+    }
+  ]
+}
