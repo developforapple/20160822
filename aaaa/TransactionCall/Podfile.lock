@@ -3,7 +3,20 @@ PODS:
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
+  - JZNavigationExtension (1.5.0.1)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - RegexKitLite (4.0)
+  - SVProgressHUD (2.0.3)
   - YYCache (1.0.3)
+  - YYCategories (1.0.3):
+    - YYCategories/no-arc (= 1.0.3)
+  - YYCategories/no-arc (1.0.3)
   - YYImage (1.0.2):
     - YYImage/Core (= 1.0.2)
   - YYImage/Core (1.0.2)
@@ -16,7 +29,12 @@ PODS:
 DEPENDENCIES:
   - DZNEmptyDataSet (~> 1.8.1)
   - FMDB
+  - JZNavigationExtension
+  - ReactiveCocoa
+  - RegexKitLite
+  - SVProgressHUD
   - YYCache
+  - YYCategories
   - YYModel
   - YYText
   - YYWebImage
@@ -24,12 +42,17 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  JZNavigationExtension: 7b95d2b1c48846b8bedcb40d767448f14cb9a0b7
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   YYCache: 282f35b5b0990833d0b7a06d864a87141a021da2
+  YYCategories: 0fd4d9eb0994d8d0e355beb4081c8f7202a82b7b
   YYImage: 2cc79ed49b9549b71c6715cefe7b0f5ab3d33abf
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: ac09660c9ccd9b817f409a20caa6f5587444d2ae
   YYWebImage: 0431ed108e104527669b86f75efd58958425cca2
 
-PODFILE CHECKSUM: 96b185af5b9bb66d7bd2966580b39216ee1d9046
+PODFILE CHECKSUM: fb0f4ee00e3c07d5788a2a72265cc9f25446fe6a
 
 COCOAPODS: 1.0.1

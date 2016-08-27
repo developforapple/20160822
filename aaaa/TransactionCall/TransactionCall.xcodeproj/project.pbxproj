@@ -15,8 +15,20 @@
 		2D6A175D1D503A86008A090F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6A175C1D503A86008A090F /* Assets.xcassets */; };
 		2D6A17601D503A86008A090F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D6A175E1D503A86008A090F /* LaunchScreen.storyboard */; };
 		2D78B3E11D5A29F6001CB3B7 /* TCServicesViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D78B3E01D5A29F6001CB3B7 /* TCServicesViewCtrl.m */; };
+		446148B91D719A7300BCA1E8 /* NSAttributedString+Units.m in Sources */ = {isa = PBXBuildFile; fileRef = 4461489A1D719A7300BCA1E8 /* NSAttributedString+Units.m */; };
+		446148BA1D719A7300BCA1E8 /* NSData+HKPDataImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4461489C1D719A7300BCA1E8 /* NSData+HKPDataImage.m */; };
+		446148BB1D719A7300BCA1E8 /* NSDate+Calendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4461489E1D719A7300BCA1E8 /* NSDate+Calendar.m */; };
+		446148BC1D719A7300BCA1E8 /* NSObject+KVCExceptionCatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 446148A01D719A7300BCA1E8 /* NSObject+KVCExceptionCatch.m */; };
+		446148BD1D719A7300BCA1E8 /* NSString+STRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 446148A21D719A7300BCA1E8 /* NSString+STRegex.m */; };
+		446148BE1D719A7300BCA1E8 /* NSString+StringHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 446148A41D719A7300BCA1E8 /* NSString+StringHeight.m */; };
+		446148BF1D719A7300BCA1E8 /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 446148A61D719A7300BCA1E8 /* NSString+Utils.m */; };
+		446148C01D719A7300BCA1E8 /* UIKit+Statistics.m in Sources */ = {isa = PBXBuildFile; fileRef = 446148AC1D719A7300BCA1E8 /* UIKit+Statistics.m */; };
+		446148C11D719A7300BCA1E8 /* UIKit+yg_IBInspectable.m in Sources */ = {isa = PBXBuildFile; fileRef = 446148AE1D719A7300BCA1E8 /* UIKit+yg_IBInspectable.m */; };
+		446148C21D719A7300BCA1E8 /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 446148B01D719A7300BCA1E8 /* UIView+Animation.m */; };
+		446148C51D719A7300BCA1E8 /* UIViewController+Storyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 446148B61D719A7300BCA1E8 /* UIViewController+Storyboard.m */; };
 		44CB7ADE1D71894900818480 /* SZWY_LOGO@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CB7ADC1D71894900818480 /* SZWY_LOGO@2x.png */; };
 		44CB7ADF1D71894900818480 /* SZWY_LOGO@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CB7ADD1D71894900818480 /* SZWY_LOGO@3x.png */; };
+		44CB7B081D7198CD00818480 /* TCLoginViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CB7B071D7198CD00818480 /* TCLoginViewCtrl.m */; };
 		98F507238DE21B76EE1D01E7 /* libPods-TransactionCall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F14CAF2C58833C2ED0D8782 /* libPods-TransactionCall.a */; };
 /* End PBXBuildFile section */
 
@@ -38,8 +50,37 @@
 		2D78B3E21D5A2FE5001CB3B7 /* SPMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMacro.h; sourceTree = "<group>"; };
 		30A88E05117B16079B61F13E /* Pods-TransactionCall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransactionCall.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransactionCall/Pods-TransactionCall.release.xcconfig"; sourceTree = "<group>"; };
 		3F14CAF2C58833C2ED0D8782 /* libPods-TransactionCall.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TransactionCall.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		446148991D719A7300BCA1E8 /* NSAttributedString+Units.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Units.h"; sourceTree = "<group>"; };
+		4461489A1D719A7300BCA1E8 /* NSAttributedString+Units.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Units.m"; sourceTree = "<group>"; };
+		4461489B1D719A7300BCA1E8 /* NSData+HKPDataImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+HKPDataImage.h"; sourceTree = "<group>"; };
+		4461489C1D719A7300BCA1E8 /* NSData+HKPDataImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+HKPDataImage.m"; sourceTree = "<group>"; };
+		4461489D1D719A7300BCA1E8 /* NSDate+Calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Calendar.h"; sourceTree = "<group>"; };
+		4461489E1D719A7300BCA1E8 /* NSDate+Calendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Calendar.m"; sourceTree = "<group>"; };
+		4461489F1D719A7300BCA1E8 /* NSObject+KVCExceptionCatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVCExceptionCatch.h"; sourceTree = "<group>"; };
+		446148A01D719A7300BCA1E8 /* NSObject+KVCExceptionCatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVCExceptionCatch.m"; sourceTree = "<group>"; };
+		446148A11D719A7300BCA1E8 /* NSString+STRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+STRegex.h"; sourceTree = "<group>"; };
+		446148A21D719A7300BCA1E8 /* NSString+STRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+STRegex.m"; sourceTree = "<group>"; };
+		446148A31D719A7300BCA1E8 /* NSString+StringHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringHeight.h"; sourceTree = "<group>"; };
+		446148A41D719A7300BCA1E8 /* NSString+StringHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringHeight.m"; sourceTree = "<group>"; };
+		446148A51D719A7300BCA1E8 /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
+		446148A61D719A7300BCA1E8 /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
+		446148A71D719A7300BCA1E8 /* YGFoundationCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGFoundationCategories.h; sourceTree = "<group>"; };
+		446148A91D719A7300BCA1E8 /* YGOtherCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGOtherCategories.h; sourceTree = "<group>"; };
+		446148AB1D719A7300BCA1E8 /* UIKit+Statistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+Statistics.h"; sourceTree = "<group>"; };
+		446148AC1D719A7300BCA1E8 /* UIKit+Statistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIKit+Statistics.m"; sourceTree = "<group>"; };
+		446148AD1D719A7300BCA1E8 /* UIKit+yg_IBInspectable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+yg_IBInspectable.h"; sourceTree = "<group>"; };
+		446148AE1D719A7300BCA1E8 /* UIKit+yg_IBInspectable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIKit+yg_IBInspectable.m"; sourceTree = "<group>"; };
+		446148AF1D719A7300BCA1E8 /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
+		446148B01D719A7300BCA1E8 /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
+		446148B51D719A7300BCA1E8 /* UIViewController+Storyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Storyboard.h"; sourceTree = "<group>"; };
+		446148B61D719A7300BCA1E8 /* UIViewController+Storyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Storyboard.m"; sourceTree = "<group>"; };
+		446148B71D719A7300BCA1E8 /* YGUIKitCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGUIKitCategories.h; sourceTree = "<group>"; };
+		446148B81D719A7300BCA1E8 /* YGBaseCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGBaseCategories.h; sourceTree = "<group>"; };
 		44CB7ADC1D71894900818480 /* SZWY_LOGO@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SZWY_LOGO@2x.png"; sourceTree = "<group>"; };
 		44CB7ADD1D71894900818480 /* SZWY_LOGO@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SZWY_LOGO@3x.png"; sourceTree = "<group>"; };
+		44CB7AFE1D71960B00818480 /* TransactionCall.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionCall.pch; sourceTree = "<group>"; };
+		44CB7B061D7198CD00818480 /* TCLoginViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCLoginViewCtrl.h; sourceTree = "<group>"; };
+		44CB7B071D7198CD00818480 /* TCLoginViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCLoginViewCtrl.m; sourceTree = "<group>"; };
 		A11D66BE2F3A3DB4AAB5220A /* Pods-TransactionCall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransactionCall.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransactionCall/Pods-TransactionCall.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,8 +117,9 @@
 		2D6A174C1D503A86008A090F /* TransactionCall */ = {
 			isa = PBXGroup;
 			children = (
-				44CB7ADB1D71894900818480 /* Resources */,
+				44CB7AFE1D71960B00818480 /* TransactionCall.pch */,
 				2D78B3E21D5A2FE5001CB3B7 /* SPMacro.h */,
+				44CB7ADB1D71894900818480 /* Resources */,
 				2D78B3DE1D5A29CE001CB3B7 /* Classes */,
 				2D6A17501D503A86008A090F /* AppDelegate.h */,
 				2D6A17511D503A86008A090F /* AppDelegate.m */,
@@ -101,6 +143,8 @@
 		2D78B3DE1D5A29CE001CB3B7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				446148961D719A7300BCA1E8 /* Base */,
+				44CB7B051D7198BD00818480 /* Login */,
 				2D78B3DF1D5A29F6001CB3B7 /* TCServicesViewCtrl.h */,
 				2D78B3E01D5A29F6001CB3B7 /* TCServicesViewCtrl.m */,
 				2D401C0C1D5CAD71008581CC /* TCRepairViewCtrl.h */,
@@ -111,6 +155,71 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		446148961D719A7300BCA1E8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				446148971D719A7300BCA1E8 /* Categories */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		446148971D719A7300BCA1E8 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				446148981D719A7300BCA1E8 /* FoundationCategory */,
+				446148A81D719A7300BCA1E8 /* OtherFramework */,
+				446148AA1D719A7300BCA1E8 /* UIKitCategory */,
+				446148B81D719A7300BCA1E8 /* YGBaseCategories.h */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		446148981D719A7300BCA1E8 /* FoundationCategory */ = {
+			isa = PBXGroup;
+			children = (
+				446148991D719A7300BCA1E8 /* NSAttributedString+Units.h */,
+				4461489A1D719A7300BCA1E8 /* NSAttributedString+Units.m */,
+				4461489B1D719A7300BCA1E8 /* NSData+HKPDataImage.h */,
+				4461489C1D719A7300BCA1E8 /* NSData+HKPDataImage.m */,
+				4461489D1D719A7300BCA1E8 /* NSDate+Calendar.h */,
+				4461489E1D719A7300BCA1E8 /* NSDate+Calendar.m */,
+				4461489F1D719A7300BCA1E8 /* NSObject+KVCExceptionCatch.h */,
+				446148A01D719A7300BCA1E8 /* NSObject+KVCExceptionCatch.m */,
+				446148A11D719A7300BCA1E8 /* NSString+STRegex.h */,
+				446148A21D719A7300BCA1E8 /* NSString+STRegex.m */,
+				446148A31D719A7300BCA1E8 /* NSString+StringHeight.h */,
+				446148A41D719A7300BCA1E8 /* NSString+StringHeight.m */,
+				446148A51D719A7300BCA1E8 /* NSString+Utils.h */,
+				446148A61D719A7300BCA1E8 /* NSString+Utils.m */,
+				446148A71D719A7300BCA1E8 /* YGFoundationCategories.h */,
+			);
+			path = FoundationCategory;
+			sourceTree = "<group>";
+		};
+		446148A81D719A7300BCA1E8 /* OtherFramework */ = {
+			isa = PBXGroup;
+			children = (
+				446148A91D719A7300BCA1E8 /* YGOtherCategories.h */,
+			);
+			path = OtherFramework;
+			sourceTree = "<group>";
+		};
+		446148AA1D719A7300BCA1E8 /* UIKitCategory */ = {
+			isa = PBXGroup;
+			children = (
+				446148AB1D719A7300BCA1E8 /* UIKit+Statistics.h */,
+				446148AC1D719A7300BCA1E8 /* UIKit+Statistics.m */,
+				446148AD1D719A7300BCA1E8 /* UIKit+yg_IBInspectable.h */,
+				446148AE1D719A7300BCA1E8 /* UIKit+yg_IBInspectable.m */,
+				446148AF1D719A7300BCA1E8 /* UIView+Animation.h */,
+				446148B01D719A7300BCA1E8 /* UIView+Animation.m */,
+				446148B51D719A7300BCA1E8 /* UIViewController+Storyboard.h */,
+				446148B61D719A7300BCA1E8 /* UIViewController+Storyboard.m */,
+				446148B71D719A7300BCA1E8 /* YGUIKitCategories.h */,
+			);
+			path = UIKitCategory;
+			sourceTree = "<group>";
+		};
 		44CB7ADB1D71894900818480 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +227,15 @@
 				44CB7ADD1D71894900818480 /* SZWY_LOGO@3x.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		44CB7B051D7198BD00818480 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				44CB7B061D7198CD00818480 /* TCLoginViewCtrl.h */,
+				44CB7B071D7198CD00818480 /* TCLoginViewCtrl.m */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		8935C14F9EB7AE015EB4DDA6 /* Frameworks */ = {
@@ -262,9 +380,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D6A17521D503A86008A090F /* AppDelegate.m in Sources */,
+				446148C21D719A7300BCA1E8 /* UIView+Animation.m in Sources */,
+				446148C11D719A7300BCA1E8 /* UIKit+yg_IBInspectable.m in Sources */,
 				2D78B3E11D5A29F6001CB3B7 /* TCServicesViewCtrl.m in Sources */,
+				446148BD1D719A7300BCA1E8 /* NSString+STRegex.m in Sources */,
 				2D6A174F1D503A86008A090F /* main.m in Sources */,
 				2D401C111D5CB5D2008581CC /* TCRepairImagesCell.m in Sources */,
+				446148BE1D719A7300BCA1E8 /* NSString+StringHeight.m in Sources */,
+				446148B91D719A7300BCA1E8 /* NSAttributedString+Units.m in Sources */,
+				446148C51D719A7300BCA1E8 /* UIViewController+Storyboard.m in Sources */,
+				44CB7B081D7198CD00818480 /* TCLoginViewCtrl.m in Sources */,
+				446148BA1D719A7300BCA1E8 /* NSData+HKPDataImage.m in Sources */,
+				446148BB1D719A7300BCA1E8 /* NSDate+Calendar.m in Sources */,
+				446148BC1D719A7300BCA1E8 /* NSObject+KVCExceptionCatch.m in Sources */,
+				446148C01D719A7300BCA1E8 /* UIKit+Statistics.m in Sources */,
+				446148BF1D719A7300BCA1E8 /* NSString+Utils.m in Sources */,
 				2D401C0E1D5CAD71008581CC /* TCRepairViewCtrl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,11 +514,19 @@
 			baseConfigurationReference = A11D66BE2F3A3DB4AAB5220A /* Pods-TransactionCall.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/TransactionCall/TransactionCall.pch";
 				INFOPLIST_FILE = TransactionCall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TransactionCall/Classes/Other/WeChatSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wwwbbat.TransactionCall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -401,11 +539,19 @@
 			baseConfigurationReference = 30A88E05117B16079B61F13E /* Pods-TransactionCall.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/TransactionCall/TransactionCall.pch";
 				INFOPLIST_FILE = TransactionCall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TransactionCall/Classes/Other/WeChatSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wwwbbat.TransactionCall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

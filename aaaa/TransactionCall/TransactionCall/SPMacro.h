@@ -9,78 +9,80 @@
 #ifndef SPMacro_h
 #define SPMacro_h
 
-#define RGBColor(R,G,B,A) [UIColor colorWithRed:(R)/255.f green:(G)/255.f blue:(B)/255.f alpha:(A)]
-
 #define AppBarItemColor [UIColor whiteColor]
-//#define AppBarColor RGBColor(0,23,46,1)// RGBColor(27,40,56,1)
+#define MainTintColor [UIColor whiteColor]
 #define AppBarColor RGBColor(33,33,33,1)   //主红色
 
-#define DeviceWidth CGRectGetWidth([UIScreen mainScreen].bounds)
-#define DeviceHeight CGRectGetHeight([UIScreen mainScreen].bounds)
+#pragma mark - Block weakify self
+#if __has_include(<ReactiveCocoa/ReactiveCocoa.h>) || \
+    __has_include(<libextobjc/EXTScope.h>)
+    #ifndef ygweakify
+        #define ygweakify(...) @weakify(__VA_ARGS__)
+    #endif  /*ygweakify*/
+    #ifndef ygstrongify
+        #define ygstrongify(...) @strongify(__VA_ARGS__)
+    #endif  /*ygstrongify*/
+#else
+    #ifndef ygweakify
+        #if DEBUG
+            #define ygweakify(object) @autoreleasepool{} __weak __typeof__(object) weak##_##object = object
+        #else
+            #define ygweakify(object) @try{} @finally{} {} __weak __typeof__(object) weak##_##object = object
+        #endif  /*DEBUG*/
+    #endif  /*ygweakify*/
+    #ifndef ygstrongify
+        #if DEBUG
+            #define ygstrongify(object) @autoreleasepool{} __typeof__(object) object = weak##_##object
+        #else   /*DEBUG*/
+            #define ygstrongify(object) @try{} @finally{} __typeof__(object) object = weak##_##object
+        #endif  /*ygstrongify*/
+    #endif
+#endif  /*__has_include(<ReactiveCocoa/ReactiveCocoa.h>)*/
 
-#define IS_3_5_INCH_SCREEN ((UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone) && ((int)MAX(DeviceWidth, DeviceHeight)<568))
-#define IS_4_0_INCH_SCREEN ((UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone) && ((int)MAX(DeviceWidth, DeviceHeight)==568))
-#define IS_4_7_INCH_SCREEN ((UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone) && ((int)MAX(DeviceWidth, DeviceHeight)==667))
-#define IS_5_5_INCH_SCREEN ((UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone) && ((int)MAX(DeviceWidth, DeviceHeight)>667))
+#pragma mark - Device
+#define Device_Width  ([UIScreen mainScreen].bounds.size.width)
+#define Device_Height ([UIScreen mainScreen].bounds.size.height)
+#define Device_SysVersion  ([UIDevice currentDevice].systemVersion.floatValue)
+
+#define IS_3_5_INCH_SCREEN ((UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone) && ((int)MAX(Device_Width, Device_Height)<568))
+#define IS_4_0_INCH_SCREEN ((UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone) && ((int)MAX(Device_Width, Device_Height)==568))
+#define IS_4_7_INCH_SCREEN ((UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone) && ((int)MAX(Device_Width, Device_Height)==667))
+#define IS_5_5_INCH_SCREEN ((UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone) && ((int)MAX(Device_Width, Device_Height)>667))
 
 #define iOS7    (Device_SysVersion >= 7.0f)
 #define iOS8    (Device_SysVersion >= 8.0f)
 #define iOS9    (Device_SysVersion >= 9.0f)
 #define iOS10   (Device_SysVersion >= 10.0f)
 
-//#import "DDProgressHUD.h"
-//#import "UIViewController+Storyboard.h"
+#pragma mark - Convenient Macro
+#define RGBColor(R,G,B,A) [UIColor colorWithRed:(R)/255.f green:(G)/255.f blue:(B)/255.f alpha:(A)]
 
-#pragma mark - YYModelCode
-
-#define YYModelCopyingCodingCode \
--(void)encodeWithCoder:(NSCoder *)aCoder{[self yy_modelEncodeWithCoder:aCoder];}- (id)initWithCoder:(NSCoder *)aDecoder{self=[super init];return[self yy_modelInitWithCoder:aDecoder];}- (id)copyWithZone:(NSZone *)zone{return[self yy_modelCopy];}- (NSUInteger)hash{return[self yy_modelHash];}- (BOOL)isEqual:(id)object{return[self yy_modelIsEqual:object];}
-
-#pragma mark - Block Weak self
-
-#if __has_include(<ReactiveCocoa/ReactiveCocoa.h>)
-#import <ReactiveCocoa/ReactiveCocoa.h>
-    #ifndef spweakify
-        #define spweakify(...) @weakify(__VA_ARGS__)
-    #endif
-    #ifndef spstrongify
-        #define spstrongify(...) @strongify(__VA_ARGS__)
-    #endif
-#else
-    #ifndef spweakify
-        #if DEBUG
-            #define spweakify(object) @autoreleasepool{} __weak __typeof__(object) weak##_##object = object
-        #else
-            #define spweakify(object) @try{} @finally{} {} __weak __typeof__(object) weak##_##object = object
-        #endif
-    #endif
-
-    #ifndef spstrongify
-        #if DEBUG
-            #define spstrongify(object) @autoreleasepool{} __typeof__(object) object = weak##_##object
-        #else
-            #define spstrongify(object) @try{} @finally{} __typeof__(object) object = weak##_##object
-        #endif
-    #endif
-
-#endif
-
-#pragma mark - Function
-typedef void(^BlockType)(void);
-
-NS_INLINE void RunOnMain(BlockType codeblock){
-    if (!codeblock)return;
-    if([NSThread isMainThread]){codeblock();}else{dispatch_async(dispatch_get_main_queue(),codeblock);}
+#define RunOnMainQueue(x) {   \
+    if ([NSThread isMainThread]){\
+        x;\
+    }else{\
+        dispatch_async(dispatch_get_main_queue(), ^{x});\
+    }\
+}
+#define RunOnGlobalQueue(x){\
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{x});\
+}
+#define RunAfter(time,x) {\
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(time * NSEC_PER_SEC)), dispatch_get_main_queue(), x);\
 }
 
-NS_INLINE void RunOnSubThread(BlockType codeblock){
-    if (!codeblock)return;
-    if(![NSThread isMainThread]){codeblock();}else{dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), codeblock);}
-}
+#pragma mark - YYModel
+// YYModel 实现 NSCoding NSCopying hash euqal的方法
+#ifndef YYModelDefaultCode
+#define YYModelDefaultCode -(void)encodeWithCoder:(NSCoder*)aCoder{[self yy_modelEncodeWithCoder:aCoder];}-(id)initWithCoder:(NSCoder*)aDecoder{self=[super init];return [self yy_modelInitWithCoder:aDecoder];}-(id)copyWithZone:(NSZone *)zone{return[self yy_modelCopy];}-(NSUInteger)hash{return[self yy_modelHash];}-(BOOL)isEqual:(id)object{return [self yy_modelIsEqual:object];}
+#endif //YYModelDefaultCode
 
-NS_INLINE void RunAfter(NSTimeInterval sec,BlockType codeblock){
-    if (!codeblock || (sec = MAX(0, sec))<.0001f) return;
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(sec * NSEC_PER_SEC)), dispatch_get_main_queue(), codeblock);
-}
+#pragma mark - Swizzle
+#ifndef DDSwizzleMethod
+// 快速添加方法转换的类方法
+#define DDSwizzleMethod +(void)swizzleInstanceSelector:(SEL)originalSelector withNewSelector:(SEL)newSelector{Method originalMethod = class_getInstanceMethod(self, originalSelector);Method newMethod = class_getInstanceMethod(self, newSelector);BOOL methodAdded = class_addMethod([self class],originalSelector,method_getImplementation(newMethod),method_getTypeEncoding(newMethod));if (methodAdded){class_replaceMethod([self class],newSelector,method_getImplementation(originalMethod),method_getTypeEncoding(originalMethod));}else{method_exchangeImplementations(originalMethod, newMethod);}}
+#endif //DDSwizzleMethod
+
+typedef void(^BlockReturn)(id data);  // 通用Block回调
 
 #endif /* SPMacro_h */
