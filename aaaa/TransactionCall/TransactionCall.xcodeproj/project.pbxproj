@@ -15,6 +15,8 @@
 		2D6A175D1D503A86008A090F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6A175C1D503A86008A090F /* Assets.xcassets */; };
 		2D6A17601D503A86008A090F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D6A175E1D503A86008A090F /* LaunchScreen.storyboard */; };
 		2D78B3E11D5A29F6001CB3B7 /* TCServicesViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D78B3E01D5A29F6001CB3B7 /* TCServicesViewCtrl.m */; };
+		2D92AAEC1D747170009E4993 /* AFHTTPSessionManager+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D92AAE91D747170009E4993 /* AFHTTPSessionManager+Parameters.m */; };
+		2D92AAED1D747170009E4993 /* DDRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D92AAEB1D747170009E4993 /* DDRequestManager.m */; };
 		446148B91D719A7300BCA1E8 /* NSAttributedString+Units.m in Sources */ = {isa = PBXBuildFile; fileRef = 4461489A1D719A7300BCA1E8 /* NSAttributedString+Units.m */; };
 		446148BA1D719A7300BCA1E8 /* NSData+HKPDataImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4461489C1D719A7300BCA1E8 /* NSData+HKPDataImage.m */; };
 		446148BB1D719A7300BCA1E8 /* NSDate+Calendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4461489E1D719A7300BCA1E8 /* NSDate+Calendar.m */; };
@@ -48,6 +50,10 @@
 		2D78B3DF1D5A29F6001CB3B7 /* TCServicesViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCServicesViewCtrl.h; sourceTree = "<group>"; };
 		2D78B3E01D5A29F6001CB3B7 /* TCServicesViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCServicesViewCtrl.m; sourceTree = "<group>"; };
 		2D78B3E21D5A2FE5001CB3B7 /* SPMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMacro.h; sourceTree = "<group>"; };
+		2D92AAE81D747170009E4993 /* AFHTTPSessionManager+Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+Parameters.h"; sourceTree = "<group>"; };
+		2D92AAE91D747170009E4993 /* AFHTTPSessionManager+Parameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+Parameters.m"; sourceTree = "<group>"; };
+		2D92AAEA1D747170009E4993 /* DDRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRequestManager.h; sourceTree = "<group>"; };
+		2D92AAEB1D747170009E4993 /* DDRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRequestManager.m; sourceTree = "<group>"; };
 		30A88E05117B16079B61F13E /* Pods-TransactionCall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransactionCall.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransactionCall/Pods-TransactionCall.release.xcconfig"; sourceTree = "<group>"; };
 		3F14CAF2C58833C2ED0D8782 /* libPods-TransactionCall.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TransactionCall.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		446148991D719A7300BCA1E8 /* NSAttributedString+Units.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Units.h"; sourceTree = "<group>"; };
@@ -155,9 +161,29 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		2D92AAE61D747170009E4993 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				2D92AAE71D747170009E4993 /* Network */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		2D92AAE71D747170009E4993 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2D92AAE81D747170009E4993 /* AFHTTPSessionManager+Parameters.h */,
+				2D92AAE91D747170009E4993 /* AFHTTPSessionManager+Parameters.m */,
+				2D92AAEA1D747170009E4993 /* DDRequestManager.h */,
+				2D92AAEB1D747170009E4993 /* DDRequestManager.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		446148961D719A7300BCA1E8 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				2D92AAE61D747170009E4993 /* Other */,
 				446148971D719A7300BCA1E8 /* Categories */,
 			);
 			path = Base;
@@ -395,7 +421,9 @@
 				446148BC1D719A7300BCA1E8 /* NSObject+KVCExceptionCatch.m in Sources */,
 				446148C01D719A7300BCA1E8 /* UIKit+Statistics.m in Sources */,
 				446148BF1D719A7300BCA1E8 /* NSString+Utils.m in Sources */,
+				2D92AAED1D747170009E4993 /* DDRequestManager.m in Sources */,
 				2D401C0E1D5CAD71008581CC /* TCRepairViewCtrl.m in Sources */,
+				2D92AAEC1D747170009E4993 /* AFHTTPSessionManager+Parameters.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
